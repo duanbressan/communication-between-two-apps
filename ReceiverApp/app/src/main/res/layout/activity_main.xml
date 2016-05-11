@@ -14,5 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Texto Recebido"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
 </RelativeLayout>
