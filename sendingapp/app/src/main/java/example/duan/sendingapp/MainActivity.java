@@ -24,10 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void send(){
         Intent sendIntent = new Intent();
+        sendIntent.setClassName("example.duan.receiverapp", "example.duan.receiverapp.MainActivity");
         sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         sendIntent.putExtra(Intent.EXTRA_TEXT, "Olá, tudo bem?");
         sendIntent.setType("text/plain");
-        startActivity(Intent.createChooser(sendIntent, "send to"));
+
+        startActivity(sendIntent);
 
     }
 }
