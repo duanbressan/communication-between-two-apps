@@ -10,7 +10,9 @@
     tools:context="example.duan.receiverapp.MainActivity">
 
     <TextView
+        android:id="@+id/textShared"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Texto Recebido"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
